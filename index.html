@@ -16,24 +16,34 @@
 	<style>
 		* {
 			font-family: helvetica thin;
+			font-size:10px;
+			color: black;
 		}
 		.marquee {
 			height: 488px;
-			width:100%;
-			background-color: blue;
+			width: 100%;
+			background-color: grey;
 		}
-/*		.marquee-image {*/
-			/* The image used */
-				/*background-image: url("http://via.placeholder.com/1400x488");*/
-
-				/* Full height */
-				/*height: 100%; */
-
-				/* Center and scale the image nicely */
-/*				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-		}*/
+		.portfolioWork {
+			height: 1210px;
+			width: 1246px;
+		}
+		.portfolioRowOne {
+			height: 370px;
+			background-color: green;
+			padding-bottom: 25px;
+		}
+		.portfolioRowTwo {
+			height: 370px;
+			background-color: yellow;
+			padding-bottom: 25px;
+			padding-top: 25px;
+		}
+		.portfolioRowThree {
+			height: 370px;
+			background-color: powderblue;
+			padding-top:25px;
+		}
 	</style>
 	<!-- Nav -->
 	<div class="navigationBar">
@@ -55,15 +65,22 @@
 			</li>
 		</ul>
 	</div>
+	<!-- Marquee -->
 	<div class="marquee container-fluid">
 		<div class="row">
 			<div class="col-1">
-				<img src="http://via.placeholder.com/1400x488">
+				<!-- <img src="http://via.placeholder.com/1400x488"> -->
 			</div>
 		</div>
 	</div>
-	<div class="leadingText"></div>
-	<div class="portfolioWork"></div>
+	<!-- Leading Text -->
+	<div class="leadingText container"></div>
+	<!-- Portfolio Work -->
+	<div class="portfolioWork container">
+		<div class="row portfolioRowOne"></div>
+		<div class="row portfolioRowTwo"></div>
+		<div class="row portfolioRowThree"></div>
+	</div>
 	<!-- Additional Bootstrap and jQuery Scripts -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
