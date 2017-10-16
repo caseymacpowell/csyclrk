@@ -17,9 +17,26 @@
 		* {
 			font-family: helvetica thin;
 		}
+		.marquee {
+			height: 488px;
+			width:100%;
+			background-color: blue;
+		}
+/*		.marquee-image {*/
+			/* The image used */
+				/*background-image: url("http://via.placeholder.com/1400x488");*/
+
+				/* Full height */
+				/*height: 100%; */
+
+				/* Center and scale the image nicely */
+/*				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+		}*/
 	</style>
 	<!-- Nav -->
-	<div class="navigation">
+	<div class="navigationBar">
 		<ul class="nav justify-content-end">
 			<li class="nav nav-item">
 				<a class="navbar-brand" href="#"><img></a>
@@ -38,7 +55,13 @@
 			</li>
 		</ul>
 	</div>
-	<div class="marquee"></div>
+	<div class="marquee container-fluid">
+		<div class="row">
+			<div class="col-1">
+				<img src="http://via.placeholder.com/1400x488">
+			</div>
+		</div>
+	</div>
 	<div class="leadingText"></div>
 	<div class="portfolioWork"></div>
 	<!-- Additional Bootstrap and jQuery Scripts -->
